@@ -8,12 +8,14 @@ import org.bukkit.entity.Player;
 import org.esoteric_organisation.example_paper_plugin.ExamplePaperPlugin;
 import org.esoteric_organisation.example_paper_plugin.custom_item.AbstractCustomItem;
 import org.esoteric_organisation.example_paper_plugin.custom_item.CustomItem;
+import org.esoteric_organisation.example_paper_plugin.custom_item.items.SCP018CustomItem;
 
 public class CustomItemManager {
 
   private final Map<CustomItem, AbstractCustomItem> customItemMap = new HashMap<>();
 
   public CustomItemManager(ExamplePaperPlugin plugin) {
+    new SCP018CustomItem(plugin, this);
   }
 
   public void addCustomItem(CustomItem itemId, AbstractCustomItem customItem) {

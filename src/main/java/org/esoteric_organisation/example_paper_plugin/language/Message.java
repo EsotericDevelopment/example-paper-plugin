@@ -12,7 +12,9 @@ public enum Message {
 
   UNKNOWN_CUSTOM_ITEM(CustomItem::isEnabled),
   UNKNOWN_CUSTOM_MULTIENTITY(CustomMultientity::isEnabled),
-  UNKNOWN_CUSTOM_MULTIBLOCK(CustomMultiblock::isEnabled);
+  UNKNOWN_CUSTOM_MULTIBLOCK(CustomMultiblock::isEnabled),
+
+  SCP_018;
 
   private final BooleanSupplier isMessageInUseSupplier;
 
